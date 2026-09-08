@@ -48,7 +48,7 @@ export default function ScrollerManager() {
       // 2. CUSTOM TRIPS: 4x4 Rover crawling across bottom terrain
       else if (isCustomPage && actorRef.current) {
         const startX = window.innerWidth * 0.02;
-        const endX = window.innerWidth * 0.82;
+        const endX = window.innerWidth * 0.92;
         const currentX = startX + progress * (endX - startX);
         const tiltAngle = Math.sin(progress * Math.PI * 8) * 4;
 
@@ -138,7 +138,7 @@ export default function ScrollerManager() {
             <img
               src={roverImg}
               alt=""
-              className="w-20 h-12 sm:w-28 sm:h-16 object-contain drop-shadow-lg"
+              className="w-20 h-12 sm:w-28 sm:h-16 object-contain drop-shadow-lg scale-350"
             />
           </div>
         </div>
@@ -171,7 +171,7 @@ export default function ScrollerManager() {
             <img
               src={ziplinerImg}
               alt=""
-              className="w-16 h-16 sm:w-24 sm:h-24 object-contain drop-shadow-md"
+              className="w-16 h-16 sm:w-24 sm:h-24 object-contain drop-shadow-md scale-200"
             />
           </div>
         </div>
