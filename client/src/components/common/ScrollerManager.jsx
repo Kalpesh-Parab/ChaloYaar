@@ -119,7 +119,7 @@ export default function ScrollerManager() {
           <img
             src={paragliderImg}
             alt=""
-            className="w-16 h-16 sm:w-24 sm:h-24 object-contain drop-shadow-md"
+            className="w-16 h-16 sm:w-24 sm:h-24 object-contain drop-shadow-md scale-300"
           />
         </div>
       )}
@@ -171,7 +171,7 @@ export default function ScrollerManager() {
             <img
               src={ziplinerImg}
               alt=""
-              className="w-16 h-16 sm:w-24 sm:h-24 object-contain drop-shadow-md scale-200"
+              className="w-16 h-16 sm:w-24 sm:h-24 object-contain drop-shadow-md"
             />
           </div>
         </div>

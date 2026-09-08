@@ -92,7 +92,7 @@ export default function PackagesSection({
             </h2>
           </div>
           <p className='font-sans text-coal-800 text-sm sm:text-base max-w-md'>
-            Har trip pe limited 14-16 seats taaki tourist bus wali feeling
+            Har trip pe limited 16-20 seats taaki tourist bus wali feeling
             bilkul na aaye. Only pure community vibe.
           </p>
         </div>
