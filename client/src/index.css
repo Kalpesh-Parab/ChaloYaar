@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Primary Yellow Theme Tokens */
+  --color-brand-yellow: #fed000;
+  --color-brand-yellow-deep: #e5bb00;
+  --color-brand-yellow-light: #fff4a3;
+
+  /* Secondary Pitch Coal & Carbon */
+  --color-coal-950: #0a0d0c;
+  --color-coal-900: #121815;
+  --color-coal-800: #1c2421;
+  --color-coal-700: #2c3834;
+
+  /* Expressive Typography */
+  --font-logo: 'Caveat Brush', cursive;
+  --font-calligraphy: 'Alex Brush', cursive;
+  --font-display: 'Syne', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+
+  --radius-card: 24px;
+  --radius-pill: 9999px;
+  --radius-surface: 32px;
+}
+
+/* Custom Utilities for 1920px Canvas */
+@layer utilities {
+  .site-container {
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .site-container {
+      padding-left: 4.5rem;
+      padding-right: 4.5rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .site-container {
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+}
+
+/* Glass & Card Styles for Yellow Canvas */
+.glass-nav-yellow {
+  background: rgba(10, 13, 12, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(254, 208, 0, 0.25);
+}
+
+.yellow-card {
+  background: #ffffff;
+  box-shadow:
+    0 16px 36px -8px rgba(10, 13, 12, 0.12),
+    0 4px 12px -2px rgba(10, 13, 12, 0.06);
+  border: 1px solid rgba(10, 13, 12, 0.08);
+}
+
+/* Hide default browser scrollbar across all browsers */
+html,
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge, Brave */
+}
+
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
