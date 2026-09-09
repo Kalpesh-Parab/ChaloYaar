@@ -5,7 +5,7 @@ import logoImg from '../../assets/logo.png';
 
 export default function Navbar({
   activeBatch = 'Chakrata Batch Live 🔥',
-  whatsappNumber = '8446257619',
+  whatsappNumber = '9437777695',
 }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,13 +17,13 @@ export default function Navbar({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-const navLinks = [
-  { name: 'Home', to: '/' },
-  { name: 'Packages', to: '/packages' },
-  { name: 'Custom Trips', to: '/custom-trip' },
-  { name: 'The Vibe', to: '/about' },
-  { name: 'FAQs', to: '/faq' },
-];
+  const navLinks = [
+    { name: 'Home', to: '/' },
+    { name: 'Packages', to: '/packages' },
+    { name: 'Custom Trips', to: '/custom-trip' },
+    { name: 'The Vibe', to: '/about' },
+    { name: 'FAQs', to: '/faq' },
+  ];
 
   return (
     <header className='fixed top-0 left-0 right-0 z-50 flex justify-center px-4 md:px-12 pt-4 transition-all duration-300'>

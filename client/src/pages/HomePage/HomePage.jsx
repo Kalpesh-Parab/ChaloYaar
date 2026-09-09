@@ -13,7 +13,7 @@ export default function HomePage() {
   const [pageData] = useState({
     siteConfig: {
       activeBatch: 'Chakrata Batch: Coming Weekend 🔥',
-      whatsappNumber: '8446257619',
+      whatsappNumber: '9437777695',
     },
     hero: {
       badge: 'CHAKRATA WEEKEND BATCH LIVE',

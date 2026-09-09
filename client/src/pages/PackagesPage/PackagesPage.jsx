@@ -8,19 +8,13 @@ import PackagesFilterBar from './components/PackagesFilterBar';
 import TestimonialsSection from '../HomePage/components/TestimonialsSection';
 import ContactSection from '../HomePage/components/ContactSection';
 
-import {
-  Calendar,
-  Clock,
-  MapPin,
-  ArrowRight,
-  Flame,
-} from 'lucide-react';
+import { Calendar, Clock, MapPin, ArrowRight, Flame } from 'lucide-react';
 
 export default function PackagesPage() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedLocation, setSelectedLocation] = useState('All Hubs');
 
-  const whatsappNumber = '8446257619';
+  const whatsappNumber = '9437777695';
 
   const allPackages = [
     {
@@ -95,24 +89,24 @@ export default function PackagesPage() {
   });
 
   return (
-    <div className="min-h-screen bg-brand-yellow text-coal-950 font-sans selection:bg-coal-950 selection:text-brand-yellow">
+    <div className='min-h-screen bg-brand-yellow text-coal-950 font-sans selection:bg-coal-950 selection:text-brand-yellow'>
       <Navbar
-        activeBatch="Chakrata Batch: Coming Weekend 🔥"
+        activeBatch='Chakrata Batch: Coming Weekend 🔥'
         whatsappNumber={whatsappNumber}
       />
       <ScrollDescender />
 
-      <main className="pt-36 pb-20">
-        <div className="site-container">
+      <main className='pt-36 pb-20'>
+        <div className='site-container'>
           {/* Header */}
-          <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
-            <p className="font-calligraphy text-coal-950 text-3xl">
+          <div className='text-center max-w-2xl mx-auto mb-12 space-y-2'>
+            <p className='font-calligraphy text-coal-950 text-3xl'>
               Find Your Next Vibe
             </p>
-            <h1 className="font-sans text-4xl sm:text-6xl font-extrabold text-coal-950">
+            <h1 className='font-sans text-4xl sm:text-6xl font-extrabold text-coal-950'>
               Curated Trips & Camps
             </h1>
-            <p className="font-sans text-coal-800 text-sm sm:text-base">
+            <p className='font-sans text-coal-800 text-sm sm:text-base'>
               Weekend escapes, bonfire trails, and high-altitude circuits. Zero
               tour-operator boring scenes.
             </p>
@@ -127,72 +121,72 @@ export default function PackagesPage() {
           />
 
           {/* Packages Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
             {filteredPackages.map((pkg) => (
               <div
                 key={pkg.id}
-                className="rounded-surface yellow-card overflow-hidden flex flex-col justify-between hover:-translate-y-1.5 transition-all duration-300 group"
+                className='rounded-surface yellow-card overflow-hidden flex flex-col justify-between hover:-translate-y-1.5 transition-all duration-300 group'
               >
                 {/* Image */}
-                <div className="relative h-64 w-full overflow-hidden">
+                <div className='relative h-64 w-full overflow-hidden'>
                   <img
                     src={pkg.image}
                     alt={pkg.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500'
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-coal-950/70 via-transparent to-transparent" />
+                  <div className='absolute inset-0 bg-gradient-to-t from-coal-950/70 via-transparent to-transparent' />
 
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-pill bg-coal-950 text-brand-yellow font-sans font-bold text-xs flex items-center gap-1">
-                    <Flame className="w-3.5 h-3.5" />
+                  <span className='absolute top-4 left-4 px-3 py-1 rounded-pill bg-coal-950 text-brand-yellow font-sans font-bold text-xs flex items-center gap-1'>
+                    <Flame className='w-3.5 h-3.5' />
                     {pkg.badge}
                   </span>
 
-                  <span className="absolute bottom-4 left-4 px-3 py-1 rounded-pill bg-white/90 text-coal-950 font-sans font-semibold text-xs flex items-center gap-1.5 shadow-sm">
-                    <MapPin className="w-3 h-3 text-coal-950" />
+                  <span className='absolute bottom-4 left-4 px-3 py-1 rounded-pill bg-white/90 text-coal-950 font-sans font-semibold text-xs flex items-center gap-1.5 shadow-sm'>
+                    <MapPin className='w-3 h-3 text-coal-950' />
                     {pkg.pickup}
                   </span>
                 </div>
 
                 {/* Body */}
-                <div className="p-6 flex flex-col flex-grow justify-between space-y-6">
+                <div className='p-6 flex flex-col flex-grow justify-between space-y-6'>
                   <div>
-                    <div className="flex items-center gap-3 text-xs text-coal-600 font-sans font-medium mb-2">
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-3.5 h-3.5" /> {pkg.duration}
+                    <div className='flex items-center gap-3 text-xs text-coal-600 font-sans font-medium mb-2'>
+                      <span className='flex items-center gap-1'>
+                        <Clock className='w-3.5 h-3.5' /> {pkg.duration}
                       </span>
                       <span>•</span>
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-3.5 h-3.5" /> Batch:{' '}
+                      <span className='flex items-center gap-1'>
+                        <Calendar className='w-3.5 h-3.5' /> Batch:{' '}
                         {pkg.nextBatch}
                       </span>
                     </div>
 
-                    <h3 className="font-sans font-bold text-xl sm:text-2xl text-coal-950 leading-snug">
+                    <h3 className='font-sans font-bold text-xl sm:text-2xl text-coal-950 leading-snug'>
                       {pkg.title}
                     </h3>
 
-                    <p className="font-sans text-coal-700 text-sm mt-2 leading-relaxed">
+                    <p className='font-sans text-coal-700 text-sm mt-2 leading-relaxed'>
                       {pkg.tagline}
                     </p>
                   </div>
 
                   {/* Action Row - Routes to /packages/:id */}
-                  <div className="flex items-center justify-between pt-4 border-t border-coal-950/10">
+                  <div className='flex items-center justify-between pt-4 border-t border-coal-950/10'>
                     <div>
-                      <span className="text-xs text-coal-600 block font-sans">
+                      <span className='text-xs text-coal-600 block font-sans'>
                         Starting at
                       </span>
-                      <span className="font-sans font-black text-2xl text-coal-950">
+                      <span className='font-sans font-black text-2xl text-coal-950'>
                         {pkg.price}
                       </span>
                     </div>
 
                     <Link
                       to={`/packages/${pkg.id}`}
-                      className="px-5 py-3 rounded-pill bg-coal-950 text-brand-yellow font-sans font-bold text-xs uppercase tracking-wider hover:bg-coal-900 flex items-center gap-2 shadow-md transition-all active:scale-95"
+                      className='px-5 py-3 rounded-pill bg-coal-950 text-brand-yellow font-sans font-bold text-xs uppercase tracking-wider hover:bg-coal-900 flex items-center gap-2 shadow-md transition-all active:scale-95'
                     >
                       View Details
-                      <ArrowRight className="w-4 h-4" />
+                      <ArrowRight className='w-4 h-4' />
                     </Link>
                   </div>
                 </div>

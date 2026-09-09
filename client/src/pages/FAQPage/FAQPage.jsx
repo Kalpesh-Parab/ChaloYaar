@@ -2,7 +2,14 @@ import React, { useState } from 'react';
 import Navbar from '../../components/common/Navbar';
 import Footer from '../../components/common/Footer';
 import ContactSection from '../HomePage/components/ContactSection';
-import { ChevronDown, HelpCircle, ShieldCheck, Tent, IndianRupee, HeartHandshake } from 'lucide-react';
+import {
+  ChevronDown,
+  HelpCircle,
+  ShieldCheck,
+  Tent,
+  IndianRupee,
+  HeartHandshake,
+} from 'lucide-react';
 
 export default function FAQPage() {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -48,7 +55,8 @@ export default function FAQPage() {
     },
     {
       category: 'booking',
-      question: 'Agar last minute emergency aa gayi toh cancellation refund milega?',
+      question:
+        'Agar last minute emergency aa gayi toh cancellation refund milega?',
       answer:
         'Trip departure se 7 din pehle inform karne par 100% credit shell milta hai jise aap agle 6 mahine mein kisi bhi Chalo Yaar trip ke liye redeem kar sakte ho. Departure se 48 ghante pehle cancel karne par token non-refundable rehta hai kyunki vehicles aur camps pre-booked hote hain.',
     },
@@ -60,24 +68,30 @@ export default function FAQPage() {
       : faqs.filter((f) => f.category === activeCategory);
 
   return (
-    <div className="min-h-screen bg-brand-yellow text-coal-950 font-sans selection:bg-coal-950 selection:text-brand-yellow">
-      <Navbar activeBatch="Chakrata Batch: Coming Weekend 🔥" whatsappNumber="8446257619" />
+    <div className='min-h-screen bg-brand-yellow text-coal-950 font-sans selection:bg-coal-950 selection:text-brand-yellow'>
+      <Navbar
+        activeBatch='Chakrata Batch: Coming Weekend 🔥'
+        whatsappNumber='9437777695'
+      />
 
-      <main className="pt-36 pb-20">
-        <div className="site-container max-w-4xl mx-auto">
+      <main className='pt-36 pb-20'>
+        <div className='site-container max-w-4xl mx-auto'>
           {/* Header */}
-          <div className="text-center space-y-3 mb-12">
-            <span className="font-calligraphy text-coal-950 text-3xl">Dimaag Mein Koi Doubt?</span>
-            <h1 className="font-sans text-4xl sm:text-6xl font-extrabold text-coal-950">
-              Clear & Honest Answers 
+          <div className='text-center space-y-3 mb-12'>
+            <span className='font-calligraphy text-coal-950 text-3xl'>
+              Dimaag Mein Koi Doubt?
+            </span>
+            <h1 className='font-sans text-4xl sm:text-6xl font-extrabold text-coal-950'>
+              Clear & Honest Answers
             </h1>
-            <p className="font-sans text-coal-800 text-sm sm:text-base">
-              Pahad jaane se pehle saare doubts sort kar lo. Jo bola, wahi milega.
+            <p className='font-sans text-coal-800 text-sm sm:text-base'>
+              Pahad jaane se pehle saare doubts sort kar lo. Jo bola, wahi
+              milega.
             </p>
           </div>
 
           {/* Filter Pills */}
-          <div className="flex items-center justify-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
+          <div className='flex items-center justify-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none'>
             {categories.map((cat) => {
               const Icon = cat.icon;
               const isActive = activeCategory === cat.id;
@@ -91,7 +105,7 @@ export default function FAQPage() {
                       : 'bg-white/80 text-coal-900 border border-coal-950/15 hover:bg-white'
                   }`}
                 >
-                  <Icon className="w-4 h-4" />
+                  <Icon className='w-4 h-4' />
                   {cat.label}
                 </button>
               );
@@ -99,19 +113,19 @@ export default function FAQPage() {
           </div>
 
           {/* Accordion FAQ List */}
-          <div className="space-y-4">
+          <div className='space-y-4'>
             {filteredFaqs.map((faq, idx) => {
               const isOpen = openFaqIndex === idx;
               return (
                 <div
                   key={idx}
-                  className="rounded-2xl yellow-card border border-coal-950/10 overflow-hidden transition-all duration-200"
+                  className='rounded-2xl yellow-card border border-coal-950/10 overflow-hidden transition-all duration-200'
                 >
                   <button
                     onClick={() => setOpenFaqIndex(isOpen ? -1 : idx)}
-                    className="w-full p-5 sm:p-6 flex items-center justify-between text-left cursor-pointer bg-white hover:bg-coal-50 transition-colors"
+                    className='w-full p-5 sm:p-6 flex items-center justify-between text-left cursor-pointer bg-white hover:bg-coal-50 transition-colors'
                   >
-                    <span className="font-sans font-bold text-base sm:text-lg text-coal-950 pr-4">
+                    <span className='font-sans font-bold text-base sm:text-lg text-coal-950 pr-4'>
                       {faq.question}
                     </span>
                     <div
@@ -119,12 +133,12 @@ export default function FAQPage() {
                         isOpen ? 'rotate-180 bg-brand-yellow' : ''
                       }`}
                     >
-                      <ChevronDown className="w-4 h-4 text-coal-950" />
+                      <ChevronDown className='w-4 h-4 text-coal-950' />
                     </div>
                   </button>
 
                   {isOpen && (
-                    <div className="px-5 sm:px-6 pb-6 pt-2 font-sans text-sm sm:text-base text-coal-800 leading-relaxed border-t border-coal-100 bg-white">
+                    <div className='px-5 sm:px-6 pb-6 pt-2 font-sans text-sm sm:text-base text-coal-800 leading-relaxed border-t border-coal-100 bg-white'>
                       {faq.answer}
                     </div>
                   )}
@@ -135,7 +149,7 @@ export default function FAQPage() {
         </div>
       </main>
 
-      <ContactSection whatsappNumber="8446257619" />
+      <ContactSection whatsappNumber='9437777695' />
       <Footer />
     </div>
   );
