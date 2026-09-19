@@ -16,7 +16,7 @@ export default function HeroSection({ heroData }) {
       { label: 'Night Walk & Campfire', desc: 'Guided by captains' },
       { label: 'Zero Hidden Costs', desc: 'Jo bola, wahi milega' },
     ],
-    whatsappNumber = '919999999999',
+    whatsappNumber = '919437777695',
   } = heroData || {};
 
   return (

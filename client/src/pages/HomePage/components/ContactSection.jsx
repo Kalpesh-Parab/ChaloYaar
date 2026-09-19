@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MessageCircle, ArrowRight } from 'lucide-react';
 
-export default function ContactSection({ whatsappNumber = '919999999999' }) {
+export default function ContactSection({ whatsappNumber = '919437777695' }) {
   const [name, setName] = useState('');
   const [trip, setTrip] = useState('Chakrata Weekend Camping');
 
@@ -27,7 +27,7 @@ export default function ContactSection({ whatsappNumber = '919999999999' }) {
               Direct Connection, Zero Form Boring
             </span>
             <h2 className='font-sans text-3xl sm:text-5xl font-extrabold text-white'>
-              Plan Banayein? 
+              Plan Banayein?
             </h2>
             <p className='font-sans text-white/80 text-sm sm:text-base'>
               Koi 10-page ka inquiry form nahi bharna. Drop your name and

@@ -1,0 +1,269 @@
+import p1 from '../../../assets/p1.jpeg';
+import p2 from '../../../assets/p2.jpeg';
+import p3 from '../../../assets/p3.jpeg';
+import p4 from '../../../assets/p4.jpeg';
+import p5 from '../../../assets/p5.jpeg';
+import p6 from '../../../assets/p6.jpeg';
+import p7 from '../../../assets/p7.jpeg';
+import p8 from '../../../assets/p8.jpeg';
+import p9 from '../../../assets/p9.jpeg';
+import k1 from '../../../assets/k1.jpeg';
+import k2 from '../../../assets/k2.jpeg';
+import k3 from '../../../assets/k3.jpeg';
+import k4 from '../../../assets/k4.jpeg';
+import k5 from '../../../assets/k5.jpeg';
+import k6 from '../../../assets/k6.jpeg';
+import k7 from '../../../assets/k7.jpeg';
+
+export const packagesData = [
+  {
+    id: 'chakrata-trekking',
+    category: 'trekking',
+    badge: 'Filling Fast 🔥',
+    title: 'Chakrata sightseeing and trekking',
+    tagline: 'High-altitude pines, Tiger Falls trek & Moila top trek',
+    duration: '1N / 2D',
+    price: '₹4,999',
+    pickup: 'Delhi / Dehradun',
+    nextBatch: 'Every Friday Night',
+    groupSize: '16-20 Folks Max',
+    cardImage: p6,
+    heroImage: p2,
+    overview:
+      'Forget standard commercial hill stations. Chakrata sits hidden at 7,000 ft in the Garhwal Himalayas. Expect pristine deodar forests, a scenic hike down to Tiger Falls, unfiltered evening bonfire, and music.',
+    quickInclusions: [
+      '1 night stay',
+      '1 breakfast and 1 dinner',
+      'Trek guide',
+      'Bonfire & Music Jams',
+    ],
+    inclusions: [
+      'Delhi to Delhi AC Tempo Traveler transfers',
+      '1 night stay on Twin/Triple/quad sharing',
+      '2 meals (Buffet Breakfast and Campfire Dinner)',
+      'Tiger Falls guided trek with forest entry permits',
+      'Moila top trek with mountain captains',
+      'Evening bonfire, music jam & dance',
+      'First aid support and certified trek leaders',
+    ],
+    exclusions: [
+      'Any personal snacks, mineral water bottles, or cafe expenses',
+      'Any activities, food and anything not mentioned in the plan',
+      'Emergency medical or travel insurance',
+    ],
+    packingItems: [
+      'Warm fleece jacket or hoodie (Chakrata drops to 12°C at night)',
+      'Good grip sports shoes or trekking boots',
+      'Reusable water bottle (No single-use plastic in hills)',
+      'Power bank & torch/headlamp for the night walk',
+      'Personal toiletries and mini towel',
+      'Your raw, open vibe (Leave city stress behind)',
+      'Raincoat',
+    ],
+    gallery: [
+      {
+        type: 'image',
+        url: p1,
+        caption: 'Camp vibes and mountain horizons',
+      },
+      {
+        type: 'image',
+        url: p2,
+        caption: 'Campfire acoustic session & storytelling circle',
+      },
+      {
+        type: 'image',
+        url: p3,
+        caption: 'Early morning ridge walk with hot Garhwali chai',
+      },
+      {
+        type: 'image',
+        url: p4,
+        caption: 'Dome tent setups nestled in the deodars',
+      },
+      {
+        type: 'image',
+        url: p5,
+        caption: 'Tiger Falls stream trail memories',
+      },
+      {
+        type: 'image',
+        url: p6,
+        caption: 'Moila top trek with 360° Himalayan views',
+      },
+      {
+        type: 'image',
+        url: p7,
+        caption: 'Chilmiri sunset point with panoramic views',
+      },
+      {
+        type: 'image',
+        url: p8,
+        caption: 'Mountain sunrise from the trekking trail',
+      },
+      {
+        type: 'image',
+        url: p9,
+        caption: 'Evening bonfire with music and storytelling',
+      },
+    ],
+    itinerary: [
+      {
+        title: 'Day 1: The Midnight Escape from Delhi',
+        headline: 'Pick-up from Akshardham / Kashmiri Gate at 10:30 PM',
+        details:
+          'Board our comfortable push-back tempo traveler. Overnight road trip with curated road songs, midnight dhaba tea break, and winding scenic hills by morning.',
+        highlights: [
+          'Overnight ride',
+          'Midnight chai stops',
+          'Icebreaker games',
+        ],
+      },
+      {
+        title: 'Day 2: Hotel Check-in & Tiger Falls Trek',
+        headline: 'Reach Hotel by 9 AM, freshen up and ready for trek',
+        details:
+          'Settle into your comfortable hotel. Post-breakfast hike to Tiger Falls trek. Night bonfire with music.',
+        highlights: ['Hotel check-in', 'Tiger Falls hike', 'Campfire & music'],
+      },
+      {
+        title: 'Day 3: Moila Top Trek & Chilmiri Top Sunset Point',
+        headline: 'Moila top trek and Chilmiri sunset point 360 degree view',
+        details:
+          'Trek to the magnificent Moila top. 360-degree scenic view at Chilmiri sunset point. Return drive back to Delhi.',
+        highlights: ['Moila top trek', '360° sunset view', 'Return drive'],
+      },
+    ],
+  },
+  {
+    id: 'manali-kasol',
+    category: 'sightseeing',
+    badge: 'Every Weekend 🔥',
+    title: 'Manali Sightseeing & Exploring',
+    tagline:
+      'Scenic snowy mountains, Solang adventure & Parvati valley serenity',
+    duration: '2N / 3D',
+    price: '₹6,999',
+    pickup: 'Delhi / Chandigarh',
+    nextBatch: 'Every Thursday Night',
+    groupSize: '16-20 Folks Max',
+    cardImage: k1,
+    heroImage: k3,
+    overview:
+      'Explore the breathtaking beauty of Himachal Pradesh. Experience snow-capped mountain peaks, peaceful valleys, riverside cafes, and vibrant local culture. Perfect for an adventure getaway with your tribe.',
+    quickInclusions: [
+      '2 night stay',
+      '2 breakfast and 2 dinner',
+      'Certified Trip Guide',
+      'Bonfire & Music Jams',
+    ],
+    inclusions: [
+      'Delhi to Delhi AC Tempo Traveler transfers',
+      '2 night stay on Twin/Triple/Quad sharing',
+      '4 meals (Buffet Breakfast and Campfire Dinner)',
+      'Hadimba Temple, Old Manali cafe trail & Mall Road',
+      'Solang Valley, Sissu & Atal Tunnel excursion',
+      'Evening bonfire, acoustic music & dance',
+      'First aid support and certified trek leaders',
+    ],
+    exclusions: [
+      'Any personal snacks, mineral water bottles, or cafe expenses',
+      'Any adventure activities (paragliding, skiing, ATV rides) not mentioned in the plan',
+      'Emergency medical or travel insurance',
+    ],
+    packingItems: [
+      'Warm fleece jacket or heavy hoodie (Manali drops near freezing at night)',
+      'Good grip sports shoes or trekking shoes',
+      'Reusable water bottle (No single-use plastic in hills)',
+      'Power bank & torch/headlamp',
+      'Personal toiletries and mini towel',
+      'Your raw, open vibe (Leave city stress behind)',
+      'Raincoat / Windcheater',
+    ],
+    gallery: [
+      {
+        type: 'image',
+        url: k1,
+        caption: 'Snowy peaks and pine forest trails around Manali',
+      },
+      {
+        type: 'image',
+        url: k2,
+        caption: 'Evening campfire session with acoustic jams',
+      },
+      {
+        type: 'image',
+        url: k3,
+        caption: 'Scenic valley vistas and river crossings',
+      },
+      {
+        type: 'image',
+        url: k4,
+        caption: 'Atal tunnel pass and snow-capped horizons',
+      },
+      {
+        type: 'image',
+        url: k5,
+        caption: 'Peaceful riverside walk along Parvati River in Kasol',
+      },
+      {
+        type: 'image',
+        url: k6,
+        caption: 'Night vibes around the campfire under mountain stars',
+      },
+      {
+        type: 'image',
+        url: k7,
+        caption: 'Solang Valley adventure activities and snow fun',
+      },
+    ],
+    itinerary: [
+      {
+        title: 'Day 1: The Midnight Escape from Delhi',
+        headline: 'Pick-up from Akshardham / Kashmiri Gate at 10:30 PM',
+        details:
+          'Board our comfortable push-back tempo traveler. Overnight road trip with curated road songs, midnight dhaba tea break, and winding scenic hills by morning.',
+        highlights: [
+          'Overnight ride',
+          'Midnight chai stops',
+          'Icebreaker games',
+        ],
+      },
+      {
+        title: 'Day 2: Hotel Check-in & Manali Exploration',
+        headline: 'Reach hotel by 9 AM, freshen up and local sightseeing',
+        details:
+          'Settle into your hotel. Post-breakfast visit to Hadimba Temple, vintage Old Manali cafes, and Mall Road. Evening bonfire with acoustic music.',
+        highlights: [
+          'Hotel check-in',
+          'Hadimba Temple',
+          'Old Manali cafes',
+          'Campfire & music',
+        ],
+      },
+      {
+        title: 'Day 3: Solang Valley, Sissu & Atal Tunnel',
+        headline:
+          'Snow points, adventure activities and the engineering marvel',
+        details:
+          'Drive through the famous Atal Tunnel into Sissu for waterfall landscapes and Lahaul valley views. Spend afternoon at Solang Valley for snow activities. Return to base for dinner.',
+        highlights: [
+          'Atal Tunnel cross',
+          'Sissu waterfall',
+          'Solang Valley snow point',
+        ],
+      },
+      {
+        title: 'Day 4: Kasol, Manikaran & Return Drive',
+        headline: 'Hot water springs, Parvati riverbanks and scenic return',
+        details:
+          'Visit the sacred hot water springs and Gurudwara at Manikaran Sahib. Spend relaxing hours exploring Kasol village and riverside trails before starting the overnight journey back to Delhi.',
+        highlights: [
+          'Manikaran hot springs',
+          'Kasol riverside trail',
+          'Overnight return drive',
+        ],
+      },
+    ],
+  },
+];
